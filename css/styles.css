@@ -1,0 +1,327 @@
+/* main page styles */
+body {
+    background-color: #FFF8F0;
+    color: #2F2A26;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 2%;
+    font-family: "Montserrat", Arial;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#legal { 
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* header and img placement */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+}
+header img {
+    display: block;
+    mix-blend-mode: multiply;
+}
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+/* link/button styles color: #27D6A6*/
+nav a {
+    font-family: "Montserrat", Arial;
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    background: #27D6A6;
+    border: 1px solid #2F2A26;
+    border-radius: 7px;
+    text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+    background: #27d6a6;
+    border-color: #1db386; 
+    font-weight: bold;
+    transform: scale(0.95); 
+}
+nav a:active { 
+    transform: scale(0.90); 
+}
+
+/* spotlight pet */
+.spotlight {
+    display: flex; 
+    line-height: 2.2rem;
+    padding: 2%;
+
+}
+@media (min-width: 1024px) {
+    .spotlight p {
+        padding: 5%;
+    }
+}
+
+.adopt-btn {
+    text-decoration: none;
+    align-self: center;
+    width: fit-content;
+    background: #27d6a781;
+    border: 1px solid #2F2A26;
+    border-radius: 30px;
+    padding: .50rem;
+}
+.adopt-btn:hover,
+.adopt-btn:focus {
+    border-width: 2px;
+}
+.adopt-btn:active { 
+    transform: scale(0.90); 
+}
+
+/** mission and impact on home page  **/
+
+.mission-impact {
+    margin: 3rem 0;
+}
+
+@media (min-width: 1024px) {
+    .mission-impact {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mission-impact div{
+        padding: 7%
+    }
+}
+
+/* featured image */
+
+.feature-text {
+    padding: 7%
+}
+.feature picture {
+    margin: 2rem;
+    margin-left: 0;
+}
+.feature {
+    padding: 2%;
+}
+
+@media (min-width: 1024px) {
+    .feature-text {
+        line-height: 4rem;
+    }
+    .feature {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+    }
+    .feature picture {
+        width:75%;
+    }
+    .feature picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/** adoptable pets for services.hmtl **/
+
+.adoptable {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.adoptable img {
+    width: 250px;
+    height: auto;
+}
+.adoptable-text {
+   line-height: 2.5rem;
+}
+
+/** about page video resize **/
+
+.foster-fam {
+    margin: 2rem;
+}
+
+
+/** contact section **/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+@media (min-width: 1440px) {
+    .contact {
+        padding: 0 7%;
+    }
+}
+
+/** contact form **/
+
+ :root {
+  --accent: #27D6A6;
+  --dark: #2F2A26;
+  --border: #2F2A26;
+  --radius: 6px;
+  --gap: 1rem;
+}
+
+form {
+  color: var(--dark);
+  width: 100%;
+  padding: 1rem;
+}
+
+form *,
+form *::before,
+form *::after {
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: transparent;
+  color: var(--dark);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(39, 214, 166, 0.25);
+}
+
+input[type="radio"] {
+  accent-color: var(--accent);
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--dark);
+  background: transparent;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(39, 214, 166, 0.25);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: var(--accent);
+  color: var(--dark);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+@media (min-width: 600px) {
+  form {
+    max-width: 480px;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  fieldset {
+    padding: 1.5rem;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    align-self: flex-start;
+  }
+}  
+
+@media (min-width: 1080px) {
+  form {
+    max-width: 750px;
+  }
+}

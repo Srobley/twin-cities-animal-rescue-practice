@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Contact | Twin Cities Animal Rescue</title>
+    </head>
+    <body>
+        <header>
+            <img src="assets/rescue-logo_c.png" alt="" width="350" height="300">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <h1>Contact Us</h1>
+            <section class="contact">
+            <div>
+                <h2>Service Area</h2>
+                <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+            <div>
+                <h2>Office Hours</h2>
+                <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+            </section> 
+            <section>
+            <div>
+                <h2>Take Action</h2>
+                <p>lorem ipsum dolor sit amet consectetuer adipiscing elit</p>
+            </div>
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <legend>Join The Family</legend>
+                        <label>
+                            First Name:
+                            <input type="text" name="first_name" required minlength="2" maxlength="50">
+                        </label>
+                        <label>
+                            Last Name:
+                            <input type="text" name="last_name" required minlength="2" maxlength="50">
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email_address" id="email" required>
+                        </label>
+                        <p>Do you want to foster or adopt a pet?</p>
+                        <label>
+                            <input type="radio" name="contact" value="foster" required>Foster
+                        </label>
+                        <label>
+                            <input type="radio" name="contact" value="adoption">Adopt
+                        </label>
+                        <label>
+                            <input type="radio" name="contact" value="volunteer">Volunteer
+                        </label>
+                        <p>Have you had a pet before?</p>
+                        <label>
+                            <input type="radio" name="previousOwner" value="yes" required>Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="previousOwner" value="no">No
+                        </label>
+                        <p>Schedule a Meeting:</p>
+                        <label for="appointment">Date:</label>
+                        <input type="date" required>
+                        <label for="appointement">Time:</label>
+                        <input type="time" id="appointment" name="appointment" min="09:00" max="17:00" step="1800" required>
+                        <label for="message">Additional Comments:</label>
+                        <textarea id="message" name="message" rows="4" columns="40" minlength="10" maxlength="500" placeholder="Enter message here..."></textarea>
+                        <button form="contact" type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p id="legal">&copy; Twin Cities Animal Rescue</p>
+        </footer>
+    </body>
+</html>
