@@ -301,6 +301,11 @@ input[type="submit"]:active {
   transform: scale(0.97);
 }
 
+#first_name_error, #last_name_error, #email_error {
+  font-weight: bold;
+  color: #b00020;
+}
+
 @media (min-width: 600px) {
   form {
     max-width: 480px;
