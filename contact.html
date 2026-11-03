@@ -10,6 +10,7 @@
     <title>Contact | Twin Cities Animal Rescue</title>
     </head>
     <body>
+        <script src="js/script.js" defer></script>
         <header>
             <img src="assets/rescue-logo_c.png" alt="" width="350" height="300">
             <nav>
@@ -43,15 +44,18 @@
                         <legend>Join The Family</legend>
                         <label>
                             First Name:
-                            <input type="text" name="first_name" required minlength="2" maxlength="50">
+                            <input type="text" name="first_name" id="first_name" required minlength="2" maxlength="50">
+                            <span id="first_name_error"></span>
                         </label>
                         <label>
                             Last Name:
-                            <input type="text" name="last_name" required minlength="2" maxlength="50">
+                            <input type="text" name="last_name" id="last_name" required minlength="2" maxlength="50">
+                            <span id="last_name_error"></span>
                         </label>
                         <label>
                             Email:
                             <input type="email" name="email_address" id="email" required>
+                            <span id="email_error"></span>
                         </label>
                         <p>Do you want to foster or adopt a pet?</p>
                         <label>
@@ -73,7 +77,7 @@
                         <p>Schedule a Meeting:</p>
                         <label for="appointment">Date:</label>
                         <input type="date" required>
-                        <label for="appointement">Time:</label>
+                        <label for="appointment">Time:</label>
                         <input type="time" id="appointment" name="appointment" min="09:00" max="17:00" step="1800" required>
                         <label for="message">Additional Comments:</label>
                         <textarea id="message" name="message" rows="4" columns="40" minlength="10" maxlength="500" placeholder="Enter message here..."></textarea>
